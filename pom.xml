@@ -11,7 +11,7 @@
 	<groupId>com.test</groupId>
 	<artifactId>docker-helloworld</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>docker-helloworld</name>
+	<name>docker-spring-boot</name>
 	<description>project for Spring Boot</description>
 	<packaging>jar</packaging>
 
