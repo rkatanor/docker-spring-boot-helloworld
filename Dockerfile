@@ -1,5 +1,4 @@
-FROM java:8
-VOLUME /tmp
-ADD target/docker-helloworld-0.0.1-SNAPSHOT.jar app.jar
-RUN bash -c 'touch /app.jar'
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+FROM openjdk:8
+ADD target/docker-spring-boot.jar app.jar
+EXPOSE 8085
+ENTRYPOINT ["java", "-jar", "app.jar"]
